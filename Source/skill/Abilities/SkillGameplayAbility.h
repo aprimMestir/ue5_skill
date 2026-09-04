@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
+#include "GameplayTagContainer.h"
 #include "SkillGameplayAbility.generated.h"
 
 class UTexture2D;
@@ -13,6 +14,9 @@ class SKILL_API USkillGameplayAbility : public UGameplayAbility
 
 public:
     USkillGameplayAbility();
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Skill")
+    FGameplayTag AbilityTag;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Skill")
     FText DisplayName;

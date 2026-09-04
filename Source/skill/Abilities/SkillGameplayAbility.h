@@ -4,6 +4,8 @@
 #include "Abilities/GameplayAbility.h"
 #include "SkillGameplayAbility.generated.h"
 
+class UTexture2D;
+
 UCLASS(Abstract, Blueprintable)
 class SKILL_API USkillGameplayAbility : public UGameplayAbility
 {
